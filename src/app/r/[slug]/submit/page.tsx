@@ -10,8 +10,7 @@ interface pageProps {
   }
 }
 
-//@ts-ignore
-const page: FC<pageProps> = async ({ params }) => {
+const page = async ({ params }: pageProps) => {
 
   const subreddit = await db.subreddit.findFirst({
     where: {

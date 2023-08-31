@@ -14,8 +14,7 @@ interface layoutProps {
   }
 }
 
-//@ts-ignore
-const layout: FC<layoutProps> = async ({ children, params }) => {
+const layout = async ({ children, params }: layoutProps) => {
 
   const session = await getAuthSession()
 
